@@ -15,11 +15,11 @@
   .block-main {
     padding-top: 147px;
     background: url("./image/big_star_mobile.svg") 187px -100px no-repeat,
-    url("./image/middle_star_mobile.svg") 37px 97px no-repeat,
-    url("./image/little_star_mobile.svg") 91px 64px no-repeat,
-    url("./image/middle_star_mobile.svg") 303px 580px no-repeat,
-    url("./image/little_star_mobile.svg") 272px 557px no-repeat,
-    rgba(225, 255, 143, 1);
+      url("./image/middle_star_mobile.svg") 37px 97px no-repeat,
+      url("./image/little_star_mobile.svg") 91px 64px no-repeat,
+      url("./image/middle_star_mobile.svg") 303px 580px no-repeat,
+      url("./image/little_star_mobile.svg") 272px 557px no-repeat,
+      rgba(225, 255, 143, 1);
 
     a {
       align-self: center;
@@ -41,6 +41,7 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 100%;
+      letter-spacing: 0px;
       text-align: center;
     }
   }
@@ -95,8 +96,6 @@
       padding-right: 16px;
       gap: 24px;
       padding-bottom: 10px;
-
-      pointer-events: none;
       cursor: default;
       text-decoration: none;
     }
@@ -165,9 +164,7 @@
       cursor: pointer;
     }
 
-    &content-button
-
-    a {
+    &content-button a {
       text-decoration: none;
     }
 
