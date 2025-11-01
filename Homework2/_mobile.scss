@@ -1,6 +1,16 @@
 @media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+  }
 
-
+  .center {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .block-main {
     padding-top: 147px;
@@ -10,7 +20,6 @@
       align-self: center;
       display: block;
     }
-
 
     &__title {
       padding-left: 57.5px;
@@ -28,7 +37,6 @@
       font-weight: 400;
       line-height: 100%;
       text-align: center;
-
     }
   }
 
@@ -42,81 +50,131 @@
   }
 
   .block-animation {
-
-    width: 100%;
-    background-color: rgba(188, 236, 48, 1);
-
-    &__image {
-
-      width: 100%;
-    }
-  }
-
-  .block-animation {
     width: 100%;
     height: 51px;
     overflow: hidden;
     background-color: rgba(188, 236, 48, 1);
+    box-sizing: border-box;
 
     &__image {
       width: 1717px;
+      height: 51px;
       max-width: none;
       display: block;
       margin: 0 auto;
+      object-fit: cover;
     }
   }
 
   .game {
-    padding-top: 48px;
+    padding: 0;
 
     &__mobile {
-      padding-left: 16px;
-      color: rgba(255, 255, 255, 1);
+      display: block;
+      padding: 48px 0 48px 16px;
+      color: #fff;
       font-size: 40px;
       font-weight: 700;
-      line-height: 100%;
-
+      line-height: 1;
     }
 
-    &__title {
-      display: none;
-    }
-
+    &__title,
     &__description {
       display: none;
     }
+
+    &__container {
+      margin: 0;
+      max-width: 375px;
+      padding-left: 16px;
+      padding-right: 16px;
+      gap: 24px;
+
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+    }
+
+    &__card-link {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__card-link:focus {
+      outline: none;
+    }
+
+    &__number {
+      display: none;
+    }
+
+    &__card {
+      max-width: 343px;
+    }
+
+    &__image {
+      height: 284px;
+      max-width: 343px;
+    }
+
+    &__content {
+      padding: 29px 29px 33px 29px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &__name {
+      padding: 0;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 100%;
+      color: rgba(32, 32, 39, 1);
+    }
+
+    &__content--description {
+      display: block;
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      color: rgba(32, 32, 39, 1);
+      margin-bottom: 32px;
+    }
+
+    &__content-button {
+      font-family: Montserrat;
+      display: block;
+      width: 100%;
+      padding: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      background-color: #202027;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &__content-button:hover {
+      font-family: Montserrat;
+      display: block;
+      width: 100%;
+      padding: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      background-color: white;
+      color: #202027;
+      border-radius: 30px;
+      cursor: pointer;
+    }
   }
-
-  .games-container {
-    padding-left: 16px;
-    padding-right: 16px;
-    gap: 24px;
-    margin-top: 48px;
-  }
-
-
-  .game-card {
-
-    max-width: 343px;
-  }
-
-  /* Отключаем кликабельность карточек на мобилке */
-  .game-card-link {
-    pointer-events: none;
-    cursor: default;
-  }
-
-  .game-card-link:focus {
-    outline: none;
-  }
-
-  .game-card-link {
-    pointer-events: none;
-    cursor: default;
-  }
-
-  .game-card-link:focus {
-    outline: none;
-  }
-
 }
