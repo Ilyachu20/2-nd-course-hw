@@ -125,6 +125,7 @@ body {
 .game__image {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 285px;
 }
 .game__content {
   display: flex;
@@ -275,8 +276,8 @@ body {
     max-width: 343px;
   }
   .game__image {
-    height: 284px;
-    max-width: 343px;
+    height: 285px;
+    width: 343px;
   }
   .game__content {
     padding: 29px 29px 33px 29px;
