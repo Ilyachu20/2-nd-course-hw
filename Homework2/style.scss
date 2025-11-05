@@ -126,6 +126,7 @@ body {
     align-items: start;
     grid-template-columns: repeat(auto-fit, minmax(378px, 4fr));
     gap: 32px;
+    align-items: end;
   }
 
   &__card-link {
@@ -162,11 +163,13 @@ body {
 
   &__card-link:nth-child(5) &__card {
     height: 512px;
+    align-self: end;
   }
 
   &__card-link:nth-child(6) &__card {
     height: 551px;
   }
+  
 
   &__card:hover {
     transform: translateY(-5px);

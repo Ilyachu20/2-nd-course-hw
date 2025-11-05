@@ -104,6 +104,7 @@ body {
   align-items: start;
   grid-template-columns: repeat(auto-fit, minmax(378px, 4fr));
   gap: 32px;
+  align-items: end;
 }
 .game__card-link {
   text-decoration: none;
@@ -133,6 +134,7 @@ body {
 }
 .game__card-link:nth-child(5) .game__card {
   height: 512px;
+  align-self: end;
 }
 .game__card-link:nth-child(6) .game__card {
   height: 551px;
@@ -344,5 +346,14 @@ body {
     color: #202027;
     border-radius: 30px;
     cursor: pointer;
+  }
+  .footer {
+    padding: 40px 92px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    background: rgb(188, 236, 48);
   }
 }/*# sourceMappingURL=style.css.map */
