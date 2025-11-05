@@ -111,25 +111,49 @@ body {
 .game__card {
   grid-column: span 4;
   background-color: white;
-  border-radius: 16px;
+  border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 4px 12px #202027;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  width: 378px;
+}
+.game__card-link:nth-child(1) .game__card {
+  height: 473px;
+}
+.game__card-link:nth-child(2) .game__card {
+  height: 512px;
+}
+.game__card-link:nth-child(3) .game__card {
+  height: 473px;
+}
+.game__card-link:nth-child(4) .game__card {
+  height: 551px;
+}
+.game__card-link:nth-child(5) .game__card {
+  height: 512px;
+}
+.game__card-link:nth-child(6) .game__card {
+  height: 551px;
 }
 .game__card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px #202027;
 }
 .game__image {
+  width: 100%;
+  height: 314px;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+  border-radius: 30px 30px 0 0;
 }
 .game__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 32px 32px 0 32px;
 }
 .game__number {
   width: 108px;
@@ -139,9 +163,7 @@ body {
   line-height: 20px;
   color: rgb(32, 32, 39);
   background-color: rgb(247, 247, 247);
-  margin: 32px;
-  border-radius: 4px;
-  align-self: flex-start;
+  margin: 0;
   margin-bottom: 16px;
   border-radius: 52px;
   display: flex;
@@ -154,8 +176,8 @@ body {
   font-weight: 700;
   line-height: 100%;
   color: rgb(39, 26, 88);
-  padding-left: 32px;
-  padding-bottom: 36px;
+  padding: 0;
+  margin-bottom: 36px;
 }
 .game__content--description {
   display: none;
@@ -188,7 +210,7 @@ body {
   }
   .block-main {
     padding-top: 147px;
-    background: url("./image/big_star_mobile.svg") 187px -100px no-repeat, url("./image/middle_star_mobile.svg") 37px 97px no-repeat, url("./image/little_star_mobile.svg") 91px 64px no-repeat, url("./image/middle_star_mobile.svg") 303px 580px no-repeat, url("./image/little_star_mobile.svg") 272px 557px no-repeat, rgb(225, 255, 143);
+    background: rgb(225, 255, 143);
   }
   .block-main a {
     align-self: center;
@@ -208,7 +230,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 100%;
-    letter-spacing: 0px;
     text-align: center;
   }
   .block-button {
@@ -240,22 +261,22 @@ body {
   }
   .game__mobile {
     display: block;
-    padding: 48px 0 48px 16px;
-    color: #fff;
+    padding-top: 48px;
+    padding-left: 16px;
+    color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 100%;
   }
   .game__title, .game__description {
     display: none;
   }
   .game__container {
-    margin: 0;
     max-width: 375px;
     padding-left: 16px;
     padding-right: 16px;
     gap: 24px;
-    padding-bottom: 10px;
+    pointer-events: none;
     cursor: default;
     text-decoration: none;
   }
@@ -273,16 +294,10 @@ body {
   }
   .game__card {
     max-width: 343px;
-  }
-  .game__image {
-    height: 284px;
-    max-width: 343px;
+    height: 528px;
   }
   .game__content {
     padding: 29px 29px 33px 29px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
   .game__name {
     padding: 0;
@@ -314,7 +329,7 @@ body {
     border-radius: 30px;
     cursor: pointer;
   }
-  .gamecontent-button a {
+  .game a {
     text-decoration: none;
   }
   .game__content-button:hover {
@@ -329,14 +344,5 @@ body {
     color: #202027;
     border-radius: 30px;
     cursor: pointer;
-  }
-  .footer {
-    padding: 40px 92px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: center;
-    background: rgb(188, 236, 48);
   }
 }/*# sourceMappingURL=style.css.map */

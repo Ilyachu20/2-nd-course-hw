@@ -39,11 +39,13 @@ body {
   a:focus {
     text-decoration: none;
   }
+
   &__title {
     font-size: 64px;
     font-weight: 700;
     line-height: 100%;
   }
+
   &__description {
     font-size: 24px;
     margin-top: 24px;
@@ -79,6 +81,7 @@ body {
   top: 710px;
   width: 100%;
   background-color: rgba(188, 236, 48, 1);
+
   &__image {
     top: 710px;
     width: 100%;
@@ -108,6 +111,7 @@ body {
     line-height: 32px;
     max-width: 765px;
   }
+
   &__mobile {
     display: none;
   }
@@ -131,12 +135,37 @@ body {
   &__card {
     grid-column: span 4;
     background-color: white;
-    border-radius: 16px;
+    border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 4px 12px #202027;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    width: 378px;
+  }
+
+  &__card-link:nth-child(1) &__card {
+    height: 473px;
+  }
+
+  &__card-link:nth-child(2) &__card {
+    height: 512px;
+  }
+
+  &__card-link:nth-child(3) &__card {
+    height: 473px;
+  }
+
+  &__card-link:nth-child(4) &__card {
+    height: 551px;
+  }
+
+  &__card-link:nth-child(5) &__card {
+    height: 512px;
+  }
+
+  &__card-link:nth-child(6) &__card {
+    height: 551px;
   }
 
   &__card:hover {
@@ -145,13 +174,18 @@ body {
   }
 
   &__image {
+    width: 100%;
+    height: 314px;
     object-fit: cover;
+    display: block;
+    border-radius: 30px 30px 0 0;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 32px 32px 0 32px;
   }
 
   &__number {
@@ -162,9 +196,7 @@ body {
     line-height: 20px;
     color: rgba(32, 32, 39, 1);
     background-color: rgba(247, 247, 247, 1);
-    margin: 32px;
-    border-radius: 4px;
-    align-self: flex-start;
+    margin: 0;
     margin-bottom: 16px;
     border-radius: 52px;
     display: flex;
@@ -178,8 +210,8 @@ body {
     font-weight: 700;
     line-height: 100%;
     color: rgba(39, 26, 88, 1);
-    padding-left: 32px;
-    padding-bottom: 36px;
+    padding: 0;
+    margin-bottom: 36px;
   }
 
   &__content--description {
@@ -192,13 +224,13 @@ body {
 }
 
 .footer {
-    padding: 61px 577px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: center;
-    background: rgba(188, 236, 48, 1);
-  }
+  padding: 61px 577px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  background: rgba(188, 236, 48, 1);
+}
 
 @import "mobile";
