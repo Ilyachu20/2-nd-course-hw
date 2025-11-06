@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -65,14 +66,30 @@ body {
   color: #202027;
 }
 
-.block-animation {
-  top: 710px;
-  width: 100%;
-  background-color: rgb(188, 236, 48);
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-.block-animation__image {
-  top: 710px;
-  width: 100%;
+.animation-content {
+  font-family: M;
+  display: inline-flex;
+  align-items: center;
+  gap: 51px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+  animation: scrollLeft 30s linear infinite;
+}
+
+.animation-content::after {
+  content: " ВИКТОРИНА ✦ УГАДАЙ ЧИСЛО ✦ ПЕРЕВЕРНИ ТЕКСТ ✦ ПРОСТАЯ АРИФМЕТИКА ✦ КАМЕНЬ, НОЖНИЦЫ, БУМАГА ✦ ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ ✦";
+  white-space: pre;
 }
 
 .game {
