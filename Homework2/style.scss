@@ -166,27 +166,10 @@ body {
     width: 378px;
   }
 
-  // &__card-link:nth-child(1) &__card {
-  //   height: 473px;
-  // }
-
   &__card-link:nth-child(2) &__card {
-    // &__card-link:nth-child(5) &__card {
-    //   gap: 32px;
+   
     margin-bottom: -32px;
   }
-
-  // &__card-link:nth-child(3) &__card {
-  //   height: 473px;
-  // }
-
-  // &__card-link:nth-child(4) &__card {
-  //   height: 551px;
-  // }
-
-  // &__card-link:nth-child(6) &__card {
-  //   height: 551px;
-  // }
 
   &__card:hover {
     transform: translateY(-5px);
@@ -242,6 +225,8 @@ body {
     display: none;
   }
 }
+
+// FOOTER
 
 .footer {
   padding: 61px 577px;
