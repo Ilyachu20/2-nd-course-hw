@@ -50,7 +50,7 @@ const user = {
     isAdmin: True
 };
 
-// Задание 10.
+// Задание 10..
 let name = prompt("Введите Ваше имя");
 alert(`Привет, ${name}!`);
 
