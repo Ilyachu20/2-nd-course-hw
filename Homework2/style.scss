@@ -226,7 +226,11 @@ body {
 }
 
 .playground {
-  background: rgba(32, 32, 39, 1);
+  background: url("./image/Star_6.svg") 1277px 93px / 35px no-repeat,
+  url("./image/Star_7.svg") 1320px 126px / 69px no-repeat,
+  url("./image/Star_8.svg") 1319px 3366px / 69px no-repeat,
+  url("./image/Star_7.svg") 1249px 3414px / 41px no-repeat,
+   rgba(32, 32, 39, 1);
   padding-bottom: 144px;
 
   &__title {

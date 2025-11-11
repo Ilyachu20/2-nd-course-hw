@@ -194,7 +194,7 @@ body {
 }
 
 .playground {
-  background: rgb(32, 32, 39);
+  background: url("./image/Star_6.svg") 1277px 93px/35px no-repeat, url("./image/Star_7.svg") 1320px 126px/69px no-repeat, url("./image/Star_8.svg") 1319px 3366px/69px no-repeat, url("./image/Star_7.svg") 1249px 3414px/41px no-repeat, rgb(32, 32, 39);
   padding-bottom: 144px;
 }
 .playground__title {
