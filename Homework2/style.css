@@ -195,6 +195,7 @@ body {
 
 .playground {
   background: rgb(32, 32, 39);
+  padding-bottom: 144px;
 }
 .playground__title {
   font-size: 64px;

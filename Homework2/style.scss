@@ -167,7 +167,6 @@ body {
   }
 
   &__card-link:nth-child(2) &__card {
-
     margin-bottom: -32px;
   }
 
@@ -228,6 +227,7 @@ body {
 
 .playground {
   background: rgba(32, 32, 39, 1);
+  padding-bottom: 144px;
 
   &__title {
     font-size: 64px;
@@ -295,16 +295,6 @@ body {
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 // FOOTER
 
