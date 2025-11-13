@@ -48,7 +48,7 @@ body {
   margin-top: 48px;
   padding: 16px 65px;
   display: block;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   font: inherit;
   font-size: 24px;
@@ -89,6 +89,10 @@ body {
   background: rgb(188, 236, 48);
   white-space: nowrap;
   padding: 27px 49px 27px 49px;
+}
+
+.animation-title {
+  display: none;
 }
 
 .animation-content::after {
@@ -193,6 +197,76 @@ body {
   display: none;
 }
 
+.playground {
+  background: url("./image/Star_6.svg") 1277px 93px/35px no-repeat, url("./image/Star_7.svg") 1320px 126px/69px no-repeat, url("./image/Star_8.svg") 1319px 3366px/69px no-repeat, url("./image/Star_7.svg") 1249px 3414px/41px no-repeat, rgb(32, 32, 39);
+  padding-bottom: 144px;
+}
+.playground__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  padding-top: 46px;
+  color: white;
+  margin-bottom: 72px;
+}
+.playground__container {
+  display: grid;
+  gap: 32px;
+}
+.playground__card {
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  flex-direction: row;
+}
+.playground__card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.playground__content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.playground__name {
+  max-width: 504px;
+  color: #202027;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.playground__description {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.playground__button {
+  margin-top: 36px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  padding: 16px 28px 16px 28px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: white;
+  width: 247px;
+  outline: none;
+}
+
+.playground__card a {
+  text-decoration: none;
+}
+
+.playground__card a:hover,
+.playground__card a:focus,
+.playground__card a:active {
+  text-decoration: none;
+}
+
 .footer {
   padding: 61px 577px;
   font-size: 24px;
@@ -241,6 +315,7 @@ body {
     text-align: center;
   }
   .block-button {
+    margin-left: auto;
     margin-top: 36px;
     padding: 16px 103.5px;
     display: block;
@@ -263,6 +338,9 @@ body {
     background: rgb(188, 236, 48);
     white-space: nowrap;
     padding: 16px 24px 16px 24px;
+  }
+  .animation-title {
+    display: none;
   }
   .game {
     padding: 0;
@@ -352,8 +430,9 @@ body {
   .game__content-button {
     font-family: Montserrat;
     display: block;
+    border: 1px solid #202027;
     width: 100%;
-    padding: 16px;
+    padding: 16px 111px;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -361,6 +440,7 @@ body {
     color: white;
     border-radius: 30px;
     cursor: pointer;
+    text-decoration: none;
   }
   .gamecontent-button a {
     text-decoration: none;
@@ -369,7 +449,7 @@ body {
     font-family: Montserrat;
     display: block;
     width: 100%;
-    padding: 16px;
+    padding: 16px 111px;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -377,6 +457,9 @@ body {
     color: #202027;
     border-radius: 30px;
     cursor: pointer;
+  }
+  .playground {
+    display: none;
   }
   .footer {
     padding: 40px 92px;
