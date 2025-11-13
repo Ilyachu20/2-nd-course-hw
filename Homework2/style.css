@@ -48,7 +48,7 @@ body {
   margin-top: 48px;
   padding: 16px 65px;
   display: block;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   font: inherit;
   font-size: 24px;
@@ -89,6 +89,10 @@ body {
   background: rgb(188, 236, 48);
   white-space: nowrap;
   padding: 27px 49px 27px 49px;
+}
+
+.animation-title {
+  display: none;
 }
 
 .animation-content::after {
@@ -250,6 +254,17 @@ body {
   background: rgb(32, 32, 39);
   color: white;
   width: 247px;
+  outline: none;
+}
+
+.playground__card a {
+  text-decoration: none;
+}
+
+.playground__card a:hover,
+.playground__card a:focus,
+.playground__card a:active {
+  text-decoration: none;
 }
 
 .footer {
@@ -300,6 +315,7 @@ body {
     text-align: center;
   }
   .block-button {
+    margin-left: auto;
     margin-top: 36px;
     padding: 16px 103.5px;
     display: block;
@@ -322,6 +338,9 @@ body {
     background: rgb(188, 236, 48);
     white-space: nowrap;
     padding: 16px 24px 16px 24px;
+  }
+  .animation-title {
+    display: none;
   }
   .game {
     padding: 0;
@@ -411,8 +430,9 @@ body {
   .game__content-button {
     font-family: Montserrat;
     display: block;
+    border: 1px solid #202027;
     width: 100%;
-    padding: 16px;
+    padding: 16px 111px;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -420,6 +440,7 @@ body {
     color: white;
     border-radius: 30px;
     cursor: pointer;
+    text-decoration: none;
   }
   .gamecontent-button a {
     text-decoration: none;
@@ -428,7 +449,7 @@ body {
     font-family: Montserrat;
     display: block;
     width: 100%;
-    padding: 16px;
+    padding: 16px 111px;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;

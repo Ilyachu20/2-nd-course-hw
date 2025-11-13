@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./style.css">
   <title>Homework1</title>
 </head>
+
 <body class="block">
   <section class="block-main center">
     <h1 class="block-main__title">
@@ -20,13 +21,15 @@
     <p class="block-main__description">
       Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>"Поехали!"</b> и <b>приступай</b>.
     </p>
-    <a href="#game"><button class="block-button">Поехали!</button></a>
+
+    <a href="#game" class="block-button">Поехали!</a>
 
   </section>
 
   <!-- АНИМАЦИЯ -->
 
   <section class="block-animation">
+    <h2 class="animation-title">Анимация</h2>
     <div class="animation-content">
       <span>ВИКТОРИНА</span>
       <span class="separator">✦</span>
@@ -54,23 +57,25 @@
       Все игры доступны для пользования.
     </p>
     <div class="game__container">
+
       <!-- первая карточка -->
-      <a href="#" class="game__card-link">
+      <a href="#game1" class="game__card-link">
         <div class="game__card">
-          <img src="./image/first_game.png" alt="Игра №1" class="game__image">
+          <img src="./image/first_game.png" alt="game_1" class="game__image">
           <div class="game__content">
             <div class="game__number">Игра №1</div>
             <h3 class="game__name">Угадай число</h3>
             <p class="game__content--description">Попробуй угадать случайное число от 1 до 100.</p>
-            <button class="game__content-button">Играть!</button>
+
+            <div class="game__content-button">Играть!</div>
           </div>
         </div>
       </a>
 
       <!-- вторая карточка -->
-      <a href="#" class="game__card-link">
+      <a href="#game2" class="game__card-link">
         <div class="game__card">
-          <img src="./image/second_game.png" alt="Игра №2" class="game__image">
+          <img src="./image/second_game.png" alt="game_2" class="game__image">
           <div class="game__content">
             <div class="game__number">Игра №2</div>
             <h3 class="game__name">
@@ -78,41 +83,40 @@
               арифметика
             </h3>
             <p class="game__content--description">Попробуй решить простые арифметические задачи.</p>
-            <button class="game__content-button">Играть!</button>
+            <div class="game__content-button">Играть!</div>
           </div>
         </div>
       </a>
-
       <!-- третья карточка -->
-      <a href="#" class="game__card-link">
+      <a href="#game3" class="game__card-link">
         <div class="game__card">
-          <img src="./image/third_game.png" alt="Игра №3" class="game__image">
+          <img src="./image/third_game.png" alt="game_3" class="game__image">
           <div class="game__content">
             <div class="game__number">Игра №3</div>
             <h3 class="game__name">Переверни текст</h3>
             <p class="game__content--description">Попробуй ввести текст, который будет перевернут.</p>
-            <button class="game__content-button">Играть!</button>
+            <div class="game__content-button">Играть!</div>
           </div>
         </div>
       </a>
 
       <!-- четвертая карточка -->
-      <a href="#" class="game__card-link">
+      <a href="#game4" class="game__card-link">
         <div class="game__card">
-          <img src="./image/fourth_game.png" alt="Игра №4" class="game__image">
+          <img src="./image/fourth_game.png" alt="game_4" class="game__image">
           <div class="game__content">
             <div class="game__number">Игра №4</div>
             <h3 class="game__name">Камень, <br>ножницы, <br>бумага</h3>
             <p class="game__content--description">Сыграй в популярную игру против компьютера.</p>
-            <button class="game__content-button">Играть!</button>
+            <div class="game__content-button">Играть!</div>
           </div>
         </div>
       </a>
 
       <!-- пятая карточка -->
-      <a href="#" class="game__card-link">
+      <a href="#game5" class="game__card-link">
         <div class="game__card">
-          <img src="./image/fifth_game.png" alt="Игра №5" class="game__image">
+          <img src="./image/fifth_game.png" alt="game_5" class="game__image">
           <div class="game__content">
             <div class="game__number">Игра №5</div>
             <h3 class="game__name">
@@ -120,15 +124,15 @@
               викторина
             </h3>
             <p class="game__content--description">Отвечай на вопросы викторины с вариантами ответов.</p>
-            <button class="game__content-button">Играть!</button>
+            <div class="game__content-button">Играть!</div>
           </div>
         </div>
       </a>
 
       <!-- шестая карточка -->
-      <a href="#" class="game__card-link">
+      <a href="#game6" class="game__card-link">
         <div class="game__card">
-          <img src="./image/sixth_game.png" alt="Игра №6" class="game__image">
+          <img src="./image/sixth_game.png" alt="game_6" class="game__image">
           <div class="game__content">
             <div class="game__number">Игра №6</div>
             <h3 class="game__name">
@@ -137,7 +141,7 @@
             </h3>
             <p class="game__content--description">Игра, в которой при клике на кнопку фон страницы меняется на
               случайный.</p>
-            <button class="game__content-button">Играть!</button>
+            <div class="game__content-button">Играть!</div>
           </div>
         </div>
       </a>
@@ -149,52 +153,74 @@
   <section class="playground center">
     <h4 class="playground__title">Мини-игры</h4>
     <div class="playground__container">
-      <div class="playground__card">
+
+      <div id="game1" class="playground__card">
         <div class="playground__content">
           <h4 class="playground__name">Угадай число</h4>
           <p class="playground__description">Попробуй угадать случайное<br> число от 1 до 100.</p>
-          <button class="playground__button">Играть!</button>
+          <a href="#">
+            <div class="playground__button">Играть!</div>
+          </a>
         </div>
         <img src="./image/play_one.png" alt="first_game">
       </div>
-      <div class="playground__card">
+
+
+      <div id="game2" class="playground__card">
         <div class="playground__content">
           <h4 class="playground__name">Простая арифметика</h4>
           <p class="playground__description">Попробуй решить простые арифметические задачи.</p>
-          <button class="playground__button">Играть!</button>
+          <a href="#">
+            <div class="playground__button">Играть!</div>
+          </a>
         </div>
         <img src="./image/play_two.png" alt="second_game">
       </div>
 
-      <div class="playground__card">
+
+      <div id="game3" class="playground__card">
         <div class="playground__content">
           <h4 class="playground__name">Переверни текст</h4>
           <p class="playground__description">Попробуй перевернуть текст, который будет перевернут.</p>
-          <button class="playground__button">Играть!</button>
+          <a href="#">
+            <div class="playground__button">Играть!</div>
+          </a>
         </div>
         <img src="./image/play_three.png" alt="third_game">
       </div>
-      <div class="playground__card">
+
+
+      <div id="game4" class="playground__card">
         <div class="playground__content">
           <h4 class="playground__name">Камень, ножницы, бумага</h4>
           <p class="playground__description">Сыграй в популярную игру против компьютера.</p>
-          <button class="playground__button">Играть!</button>
+          <a href="#">
+            <div class="playground__button">Играть!</div>
+          </a>
         </div>
         <img src="./image/play_four.png" alt="fourth_game">
       </div>
-      <div class="playground__card">
+
+
+      <div id="game5" class="playground__card">
         <div class="playground__content">
           <h4 class="playground__name">Простая викторина</h4>
           <p class="playground__description">Отвечай на вопросы викторины с варинатами ответов.</p>
-          <button class="playground__button">Играть!</button>
+          <a href="#">
+            <div class="playground__button">Играть!</div>
+          </a>
         </div>
         <img src="./image/play_five.png" alt="fifth_game">
       </div>
-      <div class="playground__card">
+
+
+      <div id="game6" class="playground__card">
         <div class="playground__content">
           <h4 class="playground__name">Генератор случайных цветов</h4>
           <p class="playground__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-          <button class="playground__button">Играть!</button>
+          <a href="#">
+            <div class="playground__button">Играть!</div>
+          </a>
         </div>
         <img src="./image/play_six.png" alt="sixth_game">
       </div>

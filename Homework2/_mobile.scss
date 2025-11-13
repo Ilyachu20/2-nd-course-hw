@@ -1,4 +1,5 @@
 @media (max-width: 767px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -47,6 +48,7 @@
   }
 
   .block-button {
+    margin-left: auto;
     margin-top: 36px;
     padding: 16px 103.5px;
     display: block;
@@ -71,6 +73,12 @@
     white-space: nowrap;
     padding: 16px 24px 16px 24px;
   }
+
+  .animation-title {
+    display: none;
+  }
+
+
 
   .game {
     padding: 0;
@@ -180,8 +188,9 @@
     &__content-button {
       font-family: Montserrat;
       display: block;
+      border: 1px solid #202027;
       width: 100%;
-      padding: 16px;
+      padding: 16px 111px;
       font-size: 16px;
       font-weight: 600;
       line-height: 20px;
@@ -189,6 +198,8 @@
       color: white;
       border-radius: 30px;
       cursor: pointer;
+      text-decoration: none;
+
     }
 
     &content-button a {
@@ -199,7 +210,7 @@
       font-family: Montserrat;
       display: block;
       width: 100%;
-      padding: 16px;
+      padding: 16px 111px;
       font-size: 16px;
       font-weight: 600;
       line-height: 20px;
