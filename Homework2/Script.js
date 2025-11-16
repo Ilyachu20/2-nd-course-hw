@@ -1,57 +1,84 @@
+// ПРАКТИКА ПО УРОКУ
+
 // Задание 1.
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+
+let answer = prompt("Введите пароль");
+let password = "qwerty";
+if (password === answer) {
+  alert("Пароль введен верно");
+} else {
+  alert("Пароль введен неверно")
+}
 
 // Задание 2.
-let year = 2007;
-alert(year);
 
-// Задание 3.
-let author = 'Brendan Eich';
-alert(author);
+let c = Number(prompt("Введите число"));
+if (c >= 0 && c < 10) {
+  alert("Верно")
+} else {
+  alert("Неверно")
+}
 
-// Задание 4.
-let c = 10;
-let d = 2;
-alert(c + d);
-alert(c - d);
-alert(c * d);
-alert(c / d);
 
-// Задание 5.
-let f = 2;
-result = f ** 5;
-alert(result);
+// Задание 3
 
-// Задание 6.
-let h = 9;
-let g = 2;
-alert(h % g);
+let d = Number(prompt(""));
+let e = +prompt("");
+if (d > 100 || e > 100) {
+  alert("Верно")
+} else {
+  alert("Неверно")
+}
 
-// Задание 7.
-let num = 1;
-num += 5;
-num -=3;
-num *=7;
-num /=3;
-num++;
-num--;
+// Задание 4
 
-// Задание 8.
-let age = prompt('Сколько вам лет?');
-alert(age);
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
 
-// Задание 9.
-const user = {
-    name:'Jhony',
-    age: 35,
-    isAdmin: True
-};
+// Задание 5
 
-// Задание 10..
-let name = prompt("Введите Ваше имя");
-alert(`Привет, ${name}!`);
+let monthNumber = Number(prompt("Введите номер месяца"));
+
+switch (monthNumber) {
+  case 1:
+    alert("Зима");
+    break;
+  case 2:
+    alert("Зима");
+    break;
+  case 3:
+    alert("Весна");
+    break;
+  case 4:
+    alert("Весна");
+    break;
+  case 5:
+    alert("Весна");
+    break;
+  case 6:
+    alert("Лето");
+    break;
+  case 7:
+    alert("Лето");
+    break;
+  case 8:
+    alert("Лето");
+    break;
+  case 9:
+    alert("Осень");
+    break;
+  case 10:
+    alert("Осень");
+    break;
+  case 11:
+    alert("Осень");
+    break;
+  case 12:
+    alert("Зима");
+    break;
+  default:
+    alert("Номер месяца больше 13")
+}
 
 
