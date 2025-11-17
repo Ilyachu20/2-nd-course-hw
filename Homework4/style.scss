@@ -102,6 +102,7 @@ body {
   background: rgba(188, 236, 48, 1);
   white-space: nowrap;
   padding: 27px 49px 27px 49px;
+
 }
 
 .animation-title {
@@ -113,6 +114,11 @@ body {
   content: " ВИКТОРИНА ✦ УГАДАЙ ЧИСЛО ✦ ПЕРЕВЕРНИ ТЕКСТ ✦ ПРОСТАЯ АРИФМЕТИКА ✦ КАМЕНЬ, НОЖНИЦЫ, БУМАГА ✦ ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ ✦";
   white-space: pre;
 }
+
+.block-animation {
+  overflow-x: hidden;
+}
+
 
 .game {
   background: url(./image/Star\ 2_1.svg) 70vw 77px no-repeat,

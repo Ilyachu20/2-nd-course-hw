@@ -100,6 +100,10 @@ body {
   white-space: pre;
 }
 
+.block-animation {
+  overflow-x: hidden;
+}
+
 .game {
   background: url(./image/Star\ 2_1.svg) 70vw 77px no-repeat, url("./image/Star2_2.svg") 3vw 822px/55px no-repeat, url("./image/Star2_2.svg") 2vw 770px/31px no-repeat, #202027;
   padding-bottom: 50px;
