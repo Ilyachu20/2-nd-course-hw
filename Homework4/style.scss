@@ -1,6 +1,13 @@
-// html {
-//   scroll-behavior: smooth;
-// }
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
 
 * {
   padding: 0;
@@ -41,12 +48,14 @@ body {
   }
 
   &__title {
+    color: #202027;
     font-size: 64px;
     font-weight: 700;
     line-height: 100%;
   }
 
   &__description {
+    color: #202027;
     font-size: 24px;
     margin-top: 24px;
     font-weight: 400;
@@ -240,10 +249,10 @@ body {
 // второй блок с карточками Мини-игры
 
 .playground {
-  background: url("./image/Star_6.svg") 1277px 93px / 35px no-repeat,
-    url("./image/Star_7.svg") 1320px 126px / 69px no-repeat,
-    url("./image/Star_8.svg") 1319px 3366px / 69px no-repeat,
-    url("./image/Star_7.svg") 1249px 3414px / 41px no-repeat,
+  background: url("./image/Star_6.svg") 90vw 93px / 35px no-repeat,
+    url("./image/Star_7.svg") 95vw 126px / 69px no-repeat,
+    url("./image/Star_8.svg") 92vw 3366px / 69px no-repeat,
+    url("./image/Star_7.svg") 90vw 3414px / 41px no-repeat,
     rgba(32, 32, 39, 1);
   padding-bottom: 144px;
 
@@ -336,4 +345,7 @@ body {
   background: rgba(188, 236, 48, 1);
 }
 
+
 @import "mobile";
+@import "tablet";
+@import "notebook";

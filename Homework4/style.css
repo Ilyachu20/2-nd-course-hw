@@ -1,4 +1,15 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -32,11 +43,13 @@ body {
   text-decoration: none;
 }
 .block-main__title {
+  color: #202027;
   font-size: 64px;
   font-weight: 700;
   line-height: 100%;
 }
 .block-main__description {
+  color: #202027;
   font-size: 24px;
   margin-top: 24px;
   font-weight: 400;
@@ -202,7 +215,7 @@ body {
 }
 
 .playground {
-  background: url("./image/Star_6.svg") 1277px 93px/35px no-repeat, url("./image/Star_7.svg") 1320px 126px/69px no-repeat, url("./image/Star_8.svg") 1319px 3366px/69px no-repeat, url("./image/Star_7.svg") 1249px 3414px/41px no-repeat, rgb(32, 32, 39);
+  background: url("./image/Star_6.svg") 90vw 93px/35px no-repeat, url("./image/Star_7.svg") 95vw 126px/69px no-repeat, url("./image/Star_8.svg") 92vw 3366px/69px no-repeat, url("./image/Star_7.svg") 90vw 3414px/41px no-repeat, rgb(32, 32, 39);
   padding-bottom: 144px;
 }
 .playground__title {
@@ -473,5 +486,85 @@ body {
     letter-spacing: 0px;
     text-align: center;
     background: rgb(188, 236, 48);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .block-main__title {
+    width: 645px;
+    text-align: center;
+  }
+  .block-main__description {
+    text-align: center;
+  }
+  .block-button {
+    align-self: center;
+    margin: 40px auto 0;
+  }
+  .animation-content {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    padding: 16px 36px 16px 36px;
+  }
+  .block-animation {
+    overflow: hidden;
+    max-width: 768px;
+  }
+  .game__card {
+    width: 319px;
+    height: 498px;
+  }
+  .game__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game__content-button {
+    padding: 0;
+  }
+  .game__card-link:nth-child(2) .game__card {
+    margin-bottom: 0;
+  }
+  .playground {
+    padding-bottom: 15px;
+  }
+  .playground__card {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 690px;
+    height: 332px;
+  }
+  .playground__content {
+    padding: 15px;
+  }
+  .playground__name {
+    font-size: 26px;
+  }
+  .playground__description {
+    font-size: 20px;
+  }
+  .playground__image {
+    width: 500px;
+    height: 332px;
+  }
+  .playground__button {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .footer {
+    max-width: 768px;
+    padding: 40px 50px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1200px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
