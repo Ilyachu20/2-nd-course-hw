@@ -1,0 +1,100 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .center {
+        
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+
+    .block-main {
+        &__title {
+            width: 645px;
+            text-align: center;
+        }
+
+        &__description {
+            text-align: center;
+        }
+    }
+
+    .block-button {
+        align-self: center;
+        margin: 40px auto 0;
+    }
+
+    .animation-content {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+        padding: 16px 36px 16px 36px;
+    }
+
+
+    .block-animation {
+        overflow: hidden;
+        
+
+    }
+
+    .game {
+        &__card {
+            width: 319px;
+            height: 498px;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__content-button {
+            padding: 0;
+
+        }
+    }
+
+    .game__card-link:nth-child(2) .game__card {
+        margin-bottom: 0;
+    }
+
+    .playground {
+        padding-bottom: 15px;
+        &__card {
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 690px;
+            height: 332px;
+        }
+
+        &__content {
+            padding: 15px;
+        }
+
+        &__name {
+            font-size: 26px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+
+        &__image {
+            width: 500px;
+            height: 332px;
+
+        }
+
+        &__button {
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+
+    .footer {
+        max-width: 768px;
+        padding: 40px 50px;
+        overflow: hidden;
+
+
+    }
+}
