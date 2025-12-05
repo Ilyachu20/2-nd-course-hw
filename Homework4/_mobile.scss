@@ -1,0 +1,238 @@
+@media (max-width: 767px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+  }
+
+  .center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .block-main {
+    padding-top: 147px;
+    background: url("./image/big_star_mobile.svg") 187px -100px no-repeat,
+      url("./image/middle_star_mobile.svg") 37px 97px no-repeat,
+      url("./image/little_star_mobile.svg") 91px 64px no-repeat,
+      url("./image/middle_star_mobile.svg") 303px 580px no-repeat,
+      url("./image/little_star_mobile.svg") 272px 557px no-repeat,
+      rgba(225, 255, 143, 1);
+
+    a {
+      align-self: center;
+      display: block;
+    }
+
+    &__title {
+      padding-left: 57.5px;
+      padding-right: 56.5px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+
+    &__description {
+      padding-left: 39px;
+      padding-right: 39px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+
+  .block-button {
+    margin-left: auto;
+    margin-top: 36px;
+    padding: 16px 103.5px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .animation-content {
+    font-family: "Montserrat";
+    display: inline-flex;
+    align-items: center;
+    gap: 51px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 4%;
+    color: rgba(32, 32, 39, 1);
+    padding: 0 20px;
+    animation: scrollLeft 30s linear infinite;
+    background: rgba(188, 236, 48, 1);
+    white-space: nowrap;
+    padding: 16px 24px 16px 24px;
+  }
+
+  .animation-title {
+    display: none;
+  }
+
+
+
+  .game {
+    padding: 0;
+
+    &__mobile {
+      display: block;
+      padding: 48px 0 48px 16px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    &__title,
+    &__description {
+      display: none;
+    }
+
+    &__container {
+      margin: 0;
+      max-width: 375px;
+      padding-left: 16px;
+      padding-right: 16px;
+      gap: 24px;
+      padding-bottom: 10px;
+      cursor: default;
+      text-decoration: none;
+    }
+
+    &__card-link {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__card-link:focus {
+      outline: none;
+    }
+
+
+    &__card-link:nth-child(1) &__card {
+      height: 529px;
+    }
+
+    &__card-link:nth-child(2) &__card {
+      height: 567px;
+      margin: 0;
+    }
+
+    &__card-link:nth-child(3) &__card {
+      height: 567px;
+    }
+
+    &__card-link:nth-child(4) &__card {
+      height: 607px;
+    }
+
+    &__card-link:nth-child(5) &__card {
+      height: 568px;
+    }
+
+    &__card-link:nth-child(6) &__card {
+      height: 627px;
+    }
+
+    &__number {
+      display: none;
+    }
+
+    &__card {
+      max-width: 343px;
+    }
+
+    &__image {
+      height: 285px;
+      width: 343px;
+    }
+
+    &__content {
+      padding: 29px 29px 33px 29px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &__name {
+      padding: 0;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 100%;
+      color: rgba(32, 32, 39, 1);
+    }
+
+    &__content--description {
+      display: block;
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      color: rgba(32, 32, 39, 1);
+      margin-bottom: 32px;
+    }
+
+    &__content-button {
+      font-family: Montserrat;
+      display: block;
+      border: 1px solid #202027;
+      width: 100%;
+      padding: 16px 111px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      background-color: #202027;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+
+    }
+
+    &content-button a {
+      text-decoration: none;
+    }
+
+    &__content-button:hover {
+      font-family: Montserrat;
+      display: block;
+      width: 100%;
+      padding: 16px 111px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      background-color: white;
+      color: #202027;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .playground {
+    display: none;
+  }
+
+  // FOOTER
+
+  .footer {
+    padding: 40px 92px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    background: rgba(188, 236, 48, 1);
+  }
+}
