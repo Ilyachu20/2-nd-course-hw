@@ -1,4 +1,4 @@
-function startFirst() {
+function startFirst() { 
   let result = 52;
 
   do {
@@ -18,3 +18,5 @@ function startFirst() {
 
   alert("Поздравляю! Вы угадали случайное число");
 }
+
+// новое окно не открывается
