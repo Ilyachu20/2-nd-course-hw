@@ -35,6 +35,10 @@ body {
   padding-top: 196px;
 }
 
+.block-main__title span {
+  display: block;
+}
+
 .block-main {
   display: flex;
   flex-direction: column;
@@ -111,13 +115,11 @@ body {
   background: rgba(188, 236, 48, 1);
   white-space: nowrap;
   padding: 27px 49px 27px 49px;
-
 }
 
 .animation-title {
   display: none;
 }
-
 
 .animation-content::after {
   content: " ВИКТОРИНА ✦ УГАДАЙ ЧИСЛО ✦ ПЕРЕВЕРНИ ТЕКСТ ✦ ПРОСТАЯ АРИФМЕТИКА ✦ КАМЕНЬ, НОЖНИЦЫ, БУМАГА ✦ ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ ✦";
@@ -127,7 +129,6 @@ body {
 .block-animation {
   overflow-x: hidden;
 }
-
 
 .game {
   background: url(./image/Star\ 2_1.svg) 70vw 77px no-repeat,
@@ -183,7 +184,8 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    width: 378px;
+    // width: 378px;
+    width: 100%;
   }
 
   &__card-link:nth-child(2) &__card {
@@ -242,7 +244,6 @@ body {
 
   &__content-button {
     display: none;
-
   }
 }
 
@@ -252,8 +253,7 @@ body {
   background: url("./image/Star_6.svg") 90vw 93px / 35px no-repeat,
     url("./image/Star_7.svg") 95vw 126px / 69px no-repeat,
     url("./image/Star_8.svg") 92vw 3366px / 69px no-repeat,
-    url("./image/Star_7.svg") 90vw 3414px / 41px no-repeat,
-    rgba(32, 32, 39, 1);
+    url("./image/Star_7.svg") 90vw 3414px / 41px no-repeat, rgba(32, 32, 39, 1);
   padding-bottom: 144px;
 
   &__title {
@@ -288,7 +288,6 @@ body {
     padding: 48px;
     justify-content: flex-start;
     align-items: flex-start;
-
   }
 
   &__name {
@@ -297,7 +296,6 @@ body {
     font-size: 48px;
     font-weight: 700;
     line-height: 100%;
-
   }
 
   &__description {
@@ -332,7 +330,6 @@ body {
   text-decoration: none;
 }
 
-
 // FOOTER
 
 .footer {
@@ -344,7 +341,6 @@ body {
   text-align: center;
   background: rgba(188, 236, 48, 1);
 }
-
 
 @import "mobile";
 @import "tablet";
