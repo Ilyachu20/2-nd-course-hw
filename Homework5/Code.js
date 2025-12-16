@@ -27,18 +27,25 @@ function getSquare(n) {
   return n ** 2;
 }
 
-// Задание 4
 
-function num(n) {
-  let year = +prompt();
-  if (year < 0) {
-    console.log(`Вы ввели неправильное значение`);
+// Задание 4 - исправленный вариант
+
+
+
+function num() {
+  let year = +prompt('Сколько вам лет?');
+
+  if (isNaN(year) || year < 0) {
+    alert('Вы ввели неправильное значение');
   } else if (year >= 0 && year <= 12) {
-    console.log(`Привет, друг!`);
+    alert('Привет, друг!');
   } else {
-    console.log(`Добро пожаловать!`);
+    alert('Добро пожаловать!');
   }
 }
+
+
+
 
 // Задание 5
 
