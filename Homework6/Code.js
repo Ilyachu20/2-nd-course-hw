@@ -32,13 +32,11 @@ for (let i = 0; i < 3; i++) {
 }
 console.log(numbs); // вывод основного массива
 
-
 //Задание 5.
 
 const numbs = [1, 1, 1];
 numbs.push(1);
 console.log(numbs);
-
 
 //Задание 6.
 
@@ -57,7 +55,6 @@ if (numbs.includes(riddle)) {
   alert("Не угадал");
 }
 
-
 // Задание 8.
 
 const str = "abcdef";
@@ -68,7 +65,6 @@ console.log(numbs);
 const result = numbs.join("");
 console.log(result);
 
-
 // Задание 9.
 
 const numbs = [
@@ -78,7 +74,6 @@ const numbs = [
 const answer = [...arr[0], ...arr[1]];
 console.log(answer);
 
-
 // Задание 10.
 
 const numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -87,13 +82,11 @@ for (let i = 0; i < numbs.length - 1; i++) {
   console.log(sum);
 }
 
-
 // Задание 11
 
 function numbs(numbers) {
   return numbers.map((num) => num * num);
 }
-
 
 // Задание 12.
 
@@ -101,13 +94,11 @@ function numbs(words) {
   return words.map((str) => str.length);
 }
 
-
 // Задание 13.
 
 function numbs(numbers) {
   return numbers.filter((num) => num < 0);
 }
-
 
 // Задание 14.
 
@@ -119,7 +110,6 @@ const numbers = numbs.filter((num) => num % 2 === 0);
 console.log("Исходный массив:", numbs);
 console.log("Массив чётных чисел:", numbers);
 
-
 // Задание 15.
 
 const numbs = [];
@@ -128,6 +118,5 @@ for (let i = 0; i < 6; i++) {
 }
 const sum = numbs.reduce((acc, num) => acc + num, 0);
 const average = sum / numbs.length;
-console.log('Массив:', numbs);
-console.log('Среднее арифметическое:', average);
-
+console.log("Массив:", numbs);
+console.log("Среднее арифметическое:", average);
