@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// игра
+// начало
+
 function startSecond() {
   const a = Math.floor(Math.random() * 10) + 1;
   const b = Math.floor(Math.random() * 10) + 1;
