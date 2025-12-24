@@ -31,6 +31,10 @@ body {
   padding-top: 196px;
 }
 
+.block-main__title span {
+  display: block;
+}
+
 .block-main {
   display: flex;
   flex-direction: column;
@@ -160,7 +164,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  width: 378px;
+  width: 100%;
 }
 .game__card-link:nth-child(2) .game__card {
   margin-bottom: -32px;
@@ -317,6 +321,7 @@ body {
   .block-main__title {
     padding-left: 57.5px;
     padding-right: 56.5px;
+    text-align: center;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
@@ -374,6 +379,7 @@ body {
   .game__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
     margin: 0;
     padding-left: 16px;
@@ -414,7 +420,7 @@ body {
     display: none;
   }
   .game__card {
-    width: 100%;
+    align-items: center;
   }
   .game__image {
     height: 285px;
@@ -497,6 +503,7 @@ body {
   .block-main__title {
     width: 645px;
     text-align: center;
+    padding-left: 143px;
   }
   .block-main__description {
     text-align: center;
@@ -514,22 +521,43 @@ body {
   .block-animation {
     overflow: hidden;
   }
+  .game__title {
+    text-align: center;
+  }
+  .game__description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .game__card {
     width: 319px;
     height: 498px;
   }
   .game__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 319px);
+    gap: 32px;
+    justify-content: center;
   }
   .game__content-button {
     padding: 0;
+  }
+  .game__card-link {
+    padding-left: 0;
   }
   .game__card-link:nth-child(2) .game__card {
     margin-bottom: 0;
   }
   .playground {
     padding-bottom: 15px;
+  }
+  .playground__title {
+    text-align: center;
+  }
+  .playground__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .playground__card {
     padding-left: 16px;
@@ -555,7 +583,14 @@ body {
     margin-top: 10px;
   }
   .footer {
-    max-width: 768px;
+    max-width: 100%;
+    width: 100%;
+    padding: 40px 50px;
+    overflow: hidden;
+  }
+  .footer {
+    max-width: 100%;
+    width: 100%;
     padding: 40px 50px;
     overflow: hidden;
   }
