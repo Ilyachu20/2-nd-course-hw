@@ -130,3 +130,4 @@ const sum = numbs.reduce((acc, num) => acc + num, 0);
 const average = sum / numbs.length;
 console.log('Массив:', numbs);
 console.log('Среднее арифметическое:', average);
+
