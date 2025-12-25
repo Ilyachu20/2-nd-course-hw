@@ -20,6 +20,11 @@ function startSecond() {
   const operations = ["+", "-", "*", "/"];
   const operat = operations[Math.floor(Math.random() * 4)];
 
+  if (operat === "/" && a % b !== 0) {
+    startSecond(); // пересоздаём задание
+    return;
+  }
+
   let correctAnswer;
   if (operat === "+") correctAnswer = a + b;
   if (operat === "-") correctAnswer = a - b;
