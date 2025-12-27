@@ -12,13 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// начало
+// начало игры
 
 function startSecond() {
   const a = Math.floor(Math.random() * 10) + 1;
   const b = Math.floor(Math.random() * 10) + 1;
   const operations = ["+", "-", "*", "/"];
   const operat = operations[Math.floor(Math.random() * 4)];
+
+  if (operat === "/" && a % b !== 0) {
+    startSecond(); // пересоздаём задание
+    return;
+  }
 
   let correctAnswer;
   if (operat === "+") correctAnswer = a + b;
