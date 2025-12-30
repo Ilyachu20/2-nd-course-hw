@@ -36,10 +36,10 @@ console.log(Math.min(...array));
 console.log(Math.max(...array));
 
 //Задание 5.
-
-let numbs = Math.random() * 11;
-console.log(Math.floor(numbs));
-
+function randomNumber() {
+  let numbs = Math.random() * 10;
+  console.log(Math.floor(numbs) + 1);
+}
 //Задание 6.
 
 function numbs(a) {
@@ -70,11 +70,17 @@ currentDay.setDate(currentDay.getDate() + 73);
 console.log(currentDay);
 
 // Задание 10.
+function formatDate(date) {
 
-const currentDay = new Date();
-const options = { day: "numeric", month: "long", year: "numeric" };
-currentDay.toLocaleDateString("ru-RU", options);
+  const dateOptions = { day: "numeric", month: "long", year: "numeric",  weekday: "long"};
+  
 
-const currentDay = new Date();
-options = { hour: "2-digit", minute: "2-digit", second: "2-digit" };
-console.log(currentDay.toLocaleTimeString("ru-RU", options));
+  const timeOptions = { hour: "2-digit", minute: "2-digit", second: "2-digit" };
+
+
+  const formattedDate = date.toLocaleDateString("ru-RU", dateOptions);
+  const formattedTime = date.toLocaleTimeString("ru-RU", timeOptions);
+
+  return `Дата: ${formattedDate}.\nВремя: ${formattedTime}`;
+ 
+}
