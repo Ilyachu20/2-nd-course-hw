@@ -19,15 +19,25 @@ function startFourth() {
   const choice = data.toLowerCase();
   const option = ["камень", "ножницы", "бумага"];
   const computer = option[Math.floor(Math.random() * 3)];
+
+  if (!option.includes(choice)) {
+    alert("Некорректный ввод");
+    return;
+  }
+
   if (choice === computer) {
-    alert(`Ничья. Копьютер выбрал: ${computer}`);
+    alert(`Ничья! Вы выбрали - ${choice}, компьютер выбрал - ${computer}`);
   } else if (
     (choice === "камень" && computer === "ножницы") ||
     (choice === "ножницы" && computer === "бумага") ||
     (choice === "бумага" && computer === "камень")
   ) {
-    alert(`Вы выиграли. Компьютер выбрал: ${computer}`);
+    alert(
+      `Вы выиграли! Вы выбрали - ${choice}, компьютер выбрал - ${computer}`
+    );
   } else {
-    alert(`Вы проиграли. Компьютер выбрал: ${computer}`);
+    alert(
+      `Вы проиграли! Вы выбрали - ${choice}, компьютер выбрал - ${computer}`
+    );
   }
 }

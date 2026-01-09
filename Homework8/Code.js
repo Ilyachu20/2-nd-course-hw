@@ -18,11 +18,17 @@ function isPositive() {
   }
 }
 function isMale(person) {
-    return person.gender === 'male';
+  return person.gender === "male";
 }
-function filter() {
-  // писать код тут
-  if()
+function filter(array, ruleFunction) {
+  const result = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (ruleFunction(array[i])) {
+      result.push(array[i]);
+    }
+  }
+  return result;
 }
 
 console.log(filter([3, -4, 1, 9], isPositive));
