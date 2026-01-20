@@ -1,99 +1,88 @@
-// адание 1
+// Задание 1.
 
-function num(a, b) {
-  if (a < b) {
-    return a;
+const numbs = [1, 5, 4, 10, 0, 3];
+for (let i = 0; i < numbs.length; i++) {
+  if (numbs[i] == 10) break;
+  console.log(numbs[i]);
+}
+
+// Задание 2.
+
+const numbs = [1, 5, 4, 10, 0, 3];
+let position = numbs.indexOf(4);
+console.log(position);
+
+// Задание 3.
+
+const numbs = [1, 5, 4, 10, 0, 3];
+let joinedText = numbs.join(' ');
+console.log(joinedText);
+
+//Задание 4.
+
+const numbs = [];   //главный массив где будет все находиться
+for (let i = 0; i < 3; i++) {   //делаю три строки
+  let stroka = [];                // делаю внутренний массив
+  for (let j = 0; j < 3; j++) {   // делаю три 1 в строку
+    stroka.push(1);                // добавляю 1
   }
-  return b;
+  numbs.push(stroka);               // добавляю к основному массиву внутренний массив
+}
+console.log(numbs);                  // вывод основного массива
+
+
+
+//Задание 5.
+
+const numbs = [1, 1, 1];
+numbs.push(1);
+console.log(numbs);
+
+
+//Задание 6.
+
+const numbs = [9, 8, 7, 'a', 6, 5];
+numbs.sort();
+const del = numbs.filter(el => el != 'a');
+console.log(del);
+
+
+// Задание 7.
+
+const numbs = [9, 8, 7, 6, 5];
+let riddle = +prompt('Угадайте, какое значение есть в массиве');
+if (numbs.includes(riddle)) {
+  alert('Угадал');
+} else {
+  alert('Не угадал');
 }
 
-// Задание 2
+// Задание 8.
 
-function num(n) {
-  if (n % 2 === 0) {
-    return "Число четное";
-  }
-  return "Число нечетное";
-}
-
-// Задание 3
-
-function num(n) {
-  let mult = n ** 2;
-  console.log(`Квадрат числа равен ${mult}`);
-}
-
-function getSquare(n) {
-  return n ** 2;
-}
+const str = "abcdef";
+const numbs = str.split('');
+console.log(numbs);
+numbs.reverse();
+console.log(numbs);
+const result = numbs.join('');
+console.log(result);
 
 
-// Задание 4 - исправленный вариант задачи
+// Задание 9.
+
+const numbs = [[1, 2, 3], [4, 5, 6]];
+const answer = [...arr[0], ...arr[1]];
+console.log(answer);
 
 
+// Задание 10.  
 
-function num() {
-  let year = +prompt('Сколько вам лет?');
-
-  if (isNaN(year) || year < 0) {
-    alert('Вы ввели неправильное значение');
-  } else if (year >= 0 && year <= 12) {
-    alert('Привет, друг!');
-  } else {
-    alert('Добро пожаловать!');
-  }
-}
-
-
-
-
-// Задание 5
-
-
-function num() {
-    let a = +prompt();
-    let b = +prompt();
-if (!Number.isNaN(a) && !Number.isNaN(b)) {
-    console.log(a * b); 
-        return;
- } else {
-    console.log ('Одно или оба значения не являются числом');
-
-    }
-}
-
-// Задание 6
-
-
-function num() {
-    let n = +prompt();
-
-    if (Number.isNaN(n)) {
-        return 'Переданный параметр не является числом';
-    }
-
-    return `n в кубе равняется ${n ** 3}`;
+const numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < numbs.length - 1; i ++) {
+  let sum = numbs[i] + numbs[i + 1];
+  console.log(sum);
 }
 
 
-// Задание 7
+// Задание 11
 
-const circle1 = {
-    radius: 20,
-    getArea() {
-        return Math.PI * this.radius ** 2;
-    },
-    getPerimeter() {
-        return 2 * Math.PI * this.radius;
-    }
-};
-
-const circle2 = {
-    radius: 10,
-    getArea() {
-        return Math.PI * this.radius ** 2;
-    },
-    getPerimeter() {
-        return 2 * Math.PI * this.radius;
-    }
-};

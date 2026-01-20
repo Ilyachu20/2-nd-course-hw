@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    &__main-title {
+        margin-left: 50px;
+        font-size: 50px;
+    }
+
+    &__btn,
+    &__btn2,
+    &__btn3,
+    &__btn4,
+    &__btn5 {
+        margin-left: 300px;
+        margin-top: 30px;
+        font-size: 30px;
+        border-radius: 25px;
+        padding: 30px;
+    }
+
+    
+
+    &__paragraf {
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 50px;
+    }
+
+    
+
+
+}
