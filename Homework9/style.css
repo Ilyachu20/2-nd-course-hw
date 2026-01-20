@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body__main-title {
+  margin-left: 50px;
+  font-size: 50px;
+}
+.body__btn, .body__btn2, .body__btn3, .body__btn4, .body__btn5 {
+  margin-left: 300px;
+  margin-top: 30px;
+  font-size: 30px;
+  border-radius: 25px;
+  padding: 30px;
+}
+.body__paragraf {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- К заданию 1. -->
+    <h1 class="body__main-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, corrupti?</h1>
+    <button id="body__btn" class='body__btn'>Нажми меня и я скрою заголовок. Задание 1</button>
+
+    <!-- К заданию 2. -->
+
+    <p class='body__paragraf'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sequi.</p>
+    <button id="body__btn2" class="body__btn2">Кнопка меняет цвет параграфа. Задание 2</button>
+
+    <!-- К заданию 3. -->
+
+    <p class='body__paragraf'>Lorem ipsum dolor sit amet.</p>
+    <button id="body__btn3" class="body__btn3">При нажатии меняется текст. Задание 3</button>
+
+    <!-- К заданию 4. -->
+
+    <p class="description">Первый параграф</p>
+    <p class="description">Второй параграф</p>
+
+    <!-- К заданию 5. -->
+
+    <p class="description">Описание_1</p>
+    <p>Обычный текст</p>
+    <p class="description">Описание_2</p>
+    <p class="info">Информация</p>
+
+    <!-- К заданию 6. -->
+
+    <button id='addBtn' class='body__btn4'>Добавляет новый элемент в конец документа.</button>
+
+
+    <!-- Задание 7. -->
+
+    <p class="description">Описание 1</p>
+    <p class="description">Описание 2</p>
+    <p>Обычный текст</p>
+
+    <button id="removeButton" class='body__btn5'>Удалить элемент</button>
+
+
+    <script>
+
+        // Задание 1.
+
+        const titleEl = document.querySelector('.body__main-title');
+        const button = document.querySelector('#body__btn');
+
+
+        // Задание 2.
+
+        const paragraph = document.querySelector('.body__paragraf');
+        const button2 = document.querySelector('#body__btn2');
+
+        button.addEventListener('click', () => {
+            if (titleEl.style.display === 'none') {
+                titleEl.style.display = 'block';
+                button.textContent = 'Скрою';
+            } else {
+                titleEl.style.display = 'none';
+                button.textContent = 'Покажу';
+            }
+        });
+
+        button2.addEventListener('click', () => {
+            paragraph.style.color = 'blue'
+        })
+
+        // Задание 3.
+
+        const paragraphs = document.querySelectorAll('.body__paragraf');
+        const secondParagraph = paragraphs[1];
+        const button3 = document.querySelector('#body__btn3');
+
+        button3.addEventListener('click', () => {
+            secondParagraph.textContent = 'Привет, Мир!'
+        })
+
+
+        // Задание 4.
+
+
+        const descriptions = document.querySelectorAll('.description');
+
+        descriptions.forEach(item => {
+            item.textContent = 'Измененный текст';
+        });
+
+
+        // Задание 5.
+
+
+        descriptions.forEach(paragraph => {
+            paragraph.textContent = 'Новый текст';
+        });
+
+        // Задание 6.
+
+
+        const addButton = document.querySelector('#addBtn');
+
+        addButton.addEventListener('click', () => {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+
+
+        // Задание 7.
+
+        const removeButton = document.querySelector('#removeButton');
+
+        removeButton.addEventListener('click', () => {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
