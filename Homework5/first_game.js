@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   // кнопка для десктопа
   const desktopBtn = document.getElementById("desktop-guess-btn1");
+  const desktopBtn = document.getElementById("desktop-guess-btn");
+
   if (desktopBtn) {
     desktopBtn.addEventListener("click", startFirst);
   }
 
   // копка для мобилки и планшета
+
   const mobileBtn = document.getElementById("guess-number-btn1");
+  const mobileBtn = document.getElementById("guess-number-btn");
+
   if (mobileBtn) {
     mobileBtn.addEventListener("click", startFirst);
   }
