@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // начало игры
+
 function startThird() {
   let text = prompt("Введите текст, который будет перевернут");
 

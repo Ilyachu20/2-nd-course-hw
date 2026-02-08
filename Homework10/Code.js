@@ -52,6 +52,7 @@ function numbs(a) {
   return result;
 }
 
+
 // Задание 7.
 
 function numbs(a, b) {

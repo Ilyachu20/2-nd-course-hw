@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileBtn.addEventListener("click", startFourth);
   }
 });
-// начало игры
+
+
 function startFourth() {
   const data = prompt("Выбери: камень, ножницы или бумага");
 

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// начало игры
+
 
 function startSecond() {
   const a = Math.floor(Math.random() * 10) + 1;

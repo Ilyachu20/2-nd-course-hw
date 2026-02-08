@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const b = Math.floor(Math.random() * 256);
     return `rgb(${r}, ${g}, ${b})`;
   }
+// начало
 
   function changeBackground() {
     const randomColor = getRandomColor();

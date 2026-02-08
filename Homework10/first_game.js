@@ -25,6 +25,7 @@ function startFirst() {
       return;
     }
 
+    
     a = Number(input);
 
     if (Number.isNaN(a) || a < 1 || a > 100) {

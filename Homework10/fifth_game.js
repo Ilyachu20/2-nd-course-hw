@@ -80,6 +80,7 @@ function startFifth() {
       correctCount++;
     }
 
+    
     alert("Правильных ответов: " + correctCount);
   }
 }
