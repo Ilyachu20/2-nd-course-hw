@@ -59,8 +59,27 @@ function startFifth() {
     return;
   }
   if (Number(answer) === quiz[2].correctAnswer) {
-    correctCount++;
-  }
+    if (
+      prompt(quiz[0].question + " " + quiz[0].options.join(" ")) ==
+      quiz[0].correctAnswer
+    ) {
+      correctCount++;
+    }
 
-  alert("Правильных ответов: " + correctCount);
+    if (
+      prompt(quiz[1].question + " " + quiz[1].options.join(" ")) ==
+      quiz[1].correctAnswer
+    ) {
+      correctCount++;
+    }
+
+    if (
+      prompt(quiz[2].question + " " + quiz[2].options.join(" ")) ==
+      quiz[2].correctAnswer
+    ) {
+      correctCount++;
+    }
+
+    alert("Правильных ответов: " + correctCount);
+  }
 }

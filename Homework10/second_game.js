@@ -21,6 +21,7 @@ function startSecond() {
   const operat = operations[Math.floor(Math.random() * 4)];
 
   if (operat === "/" && a % b !== 0) {
+
     startSecond();
     return;
   }
@@ -32,6 +33,7 @@ function startSecond() {
   if (operat === "/") correctAnswer = a / b;
 
   const userAnswer = prompt(`Давай порешаем: ${a} ${operat} ${b}`);
+
 
   if (userAnswer === null) {
     alert("Игра завершена");

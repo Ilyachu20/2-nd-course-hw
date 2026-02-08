@@ -20,6 +20,7 @@ function startThird() {
     alert("Игра завершена");
     return;
   }
+
   let reversed = text.split("").reverse().join("");
   alert(reversed);
 }
