@@ -10,9 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileBtn.addEventListener("click", startFourth);
   }
 });
-// начало игры
+
+
 function startFourth() {
   const data = prompt("Выбери: камень, ножницы или бумага");
+
+  if (!data) {
+    alert("Игра отменена");
+    return;
+  }
+
   const choice = data.toLowerCase();
   const option = ["камень", "ножницы", "бумага"];
   const computer = option[Math.floor(Math.random() * 3)];
@@ -29,12 +36,9 @@ function startFourth() {
     (choice === "ножницы" && computer === "бумага") ||
     (choice === "бумага" && computer === "камень")
   ) {
-    alert(
-      `Вы выиграли! Вы выбрали - ${choice}, компьютер выбрал - ${computer}`,
-    );
+    alert(`Вы выиграли! Вы выбрали - ${choice}, компьютер выбрал - ${computer}`);
   } else {
-    alert(
-      `Вы проиграли! Вы выбрали - ${choice}, компьютер выбрал - ${computer}`,
-    );
+    alert(`Вы проиграли! Вы выбрали - ${choice}, компьютер выбрал - ${computer}`);
   }
 }
+
